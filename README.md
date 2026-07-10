@@ -1,87 +1,57 @@
 # Enterprise Monitoring Platform
 
-A generalized architecture case study of a centralized monitoring platform built with a Central Server and Agent model.
+A documentation-first portfolio project presenting generalized architectural concepts for a centralized monitoring platform.
 
-This repository presents architectural concepts, engineering decisions, and platform design approaches for centralized monitoring systems. All technical content has been generalized from professional engineering experience and intentionally excludes proprietary implementation details.
+The project focuses on software architecture, platform engineering, and modular system design. All technical content has been generalized from professional engineering experience and intentionally excludes proprietary implementation details.
 
 ---
 
 ## Architecture
 
-The platform follows a modular architecture centered around a Central Server and multiple monitoring Agents.
+The project explores a modular monitoring architecture that separates data collection, monitoring services, and operational visualization into independent components.
 
-Monitoring Agents collect metrics and service health information from distributed hosts, while the Central Server aggregates monitoring data, coordinates monitoring services, and provides a unified operational view.
-
-The architecture combines push- and pull-based communication to support flexible monitoring scenarios and uses WebSocket for real-time status updates.
-
-```text
-                +----------------------+
-                | Monitoring Agent(s)  |
-                |----------------------|
-                | Metrics Collection   |
-                | Heartbeat            |
-                | Service Check        |
-                +----------+-----------+
-                           |
-                     Push / Pull
-                           |
-+------------------------------------------------------+
-|                   Central Server                     |
-|------------------------------------------------------|
-| RESTful Services                                     |
-| Monitoring Services                                  |
-| Dashboard Aggregation                                |
-| Alert Management                                     |
-| Historical Metrics                                   |
-| Real-time Notifications                              |
-+------------------------------------------------------+
-                           |
-                           |
-                 +---------+----------+
-                 |   Web Dashboard    |
-                 +--------------------+
-```
+The design emphasizes maintainability, modularity, and extensibility while demonstrating a generalized centralized monitoring approach.
 
 ---
 
 ## Engineering Highlights
 
-* Central Server and Agent Architecture
-* Push/Pull Hybrid Communication
-* Heartbeat Monitoring
-* Metrics Collection
-* Service Health Monitoring
-* Dashboard Aggregation
-* Real-time Communication
-* Modular Platform Design
-* Extensible Monitoring Architecture
+- Centralized Monitoring Architecture
+- Push/Pull Communication
+- Heartbeat Monitoring
+- Metrics Collection
+- Service Health Monitoring
+- Dashboard Aggregation
+- Real-time Communication
+- Modular Platform Design
+- Extensible Monitoring Architecture
 
 ---
 
 ## Technology Stack
 
-**Backend**
+Backend
 
 Java · Spring Boot · Spring Security · RESTful API · WebSocket
 
-**Frontend**
+Frontend
 
 Vue 3 · TypeScript · Pinia · Chart.js · ECharts
 
-**Database**
+Database
 
 MySQL
 
-**Architecture**
+Architecture
 
-Central Server Architecture · Agent-based Architecture · Push/Pull Hybrid Architecture · Modular Architecture · Dashboard Aggregation
+Centralized Monitoring · Agent-based Monitoring · Push/Pull Communication · Modular Architecture
 
 ---
 
 ## Repository Scope
 
-This repository is a generalized architecture case study intended to demonstrate software architecture, engineering design, and platform-oriented thinking.
+This repository is a documentation-first portfolio project intended to demonstrate generalized software architecture, engineering concepts, and platform-oriented design.
 
-It does not represent a production system or the complete implementation of any organization.
+It does not represent the actual implementation of any organization.
 
 To protect confidentiality, this repository intentionally excludes proprietary source code, internal identifiers, client information, business rules, production configurations, API specifications, database schemas, deployment details, logs, screenshots, credentials, and other confidential assets.
