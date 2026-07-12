@@ -30,19 +30,19 @@ The design emphasizes maintainability, modularity, and extensibility while demon
 
 ## Technology Stack
 
-Backend
+**Backend**
 
 Java · Spring Boot · Spring Security · RESTful API · WebSocket
 
-Frontend
+**Frontend**
 
 Vue 3 · TypeScript · Pinia · Chart.js · ECharts
 
-Database
+**Database**
 
 MySQL
 
-Architecture
+**Architecture**
 
 Centralized Monitoring · Agent-based Monitoring · Push/Pull Communication · Modular Architecture
 
